@@ -1,3 +1,6 @@
+import Hangman from './hangman'
+import getPuzzle from './requests'
+
 const puzzleEl = document.querySelector('#puzzle')
 const statusEl = document.querySelector('#status')
 let game1
@@ -28,22 +31,3 @@ const startGame = async () => {
 document.querySelector('#reset').addEventListener('click', startGame)
 
 startGame()
-
-// getPuzzle('2').then((puzzle) => {
-//   console.log(puzzle)
-// }).catch((err) => {
-//   console.log(`Error: ${err}`)
-// })
-
-// getCountry('US').then((country) => {
-//   console.log(country.name)
-// }).catch((err) => {
-//   console.log(`Error: ${err}`)
-// })
-
-// getLocation().then((location) => {
-//   console.log(location)
-//   console.log(`City is ${location.city} and country is ${location.country}`)
-// }).catch((error) => {
-//   console.log(`Error: ${error}`)
-// })
