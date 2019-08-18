@@ -50,3 +50,5 @@ class Hangman {
         return message
     }
 }
+
+export { Hangman as default }
